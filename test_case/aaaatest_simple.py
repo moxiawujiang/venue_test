@@ -8,11 +8,13 @@ import time
 
 def test_search():
     driver=webdriver.Firefox()
-    driver.get("https://www.baidu.com/")
+    driver.get("http://www.baidu.com/")
     WebDriverWait(driver,5).until(EC.text_to_be_present_in_element_value((By.XPATH,"html']"),u'百度一下'))
 
     time.sleep(3)
     driver.quit()
+
+
 
 
 
