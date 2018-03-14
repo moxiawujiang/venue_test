@@ -1,0 +1,8 @@
+/test_report/
+/.idea/
+/geckodriver.log
+/__pycache__/
+/page/__pycache__/
+/public/__pycache__/
+/test_case/__pycache__/
+
