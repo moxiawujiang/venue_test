@@ -8,7 +8,7 @@ import sys
 dir=os.path.dirname(os.path.dirname(__file__))
 sys.path.append(dir)
 from selenium import webdriver
-from public.base  import get_element,get_screen_and_print_pic_path,error_get_screen
+from public.base  import get_element,error_get_screen
 from ddt import ddt,data,unpack
 from  selenium.webdriver.common.action_chains import ActionChains
 
@@ -69,10 +69,6 @@ class Login(unittest.TestCase):
         password.send_keys(pwrd)
 
         login_botn=get_element(self,"id","loginBtn")
-        username.clear()
-        password.clear()
-        username.send_keys(uname)
-        password.send_keys(pwrd)
         login_botn.click()
 
         role_name=get_element(self,"classname","role-name")
