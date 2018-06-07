@@ -29,7 +29,7 @@ class Login(unittest.TestCase):
     @error_get_screen(driver)
     def test_a_get_url(self):
         '''访问系统首页'''
-        self.driver.get("http://222.197.182.54/vein_new/login.do")
+        self.driver.get("")
         time.sleep(2)
         raise Exception("主动报错")
 
