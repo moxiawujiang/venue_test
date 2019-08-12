@@ -57,7 +57,7 @@ def send_report(file_dir):
 
     smtp=smtplib.SMTP()
     smtp.connect("smtp.163.com")
-    smtp.login("13709048313@163.com","605332571qwe")
+    smtp.login("13709048313@163.com","********")
     smtp.sendmail(mail_from,mail_to,msg.as_string())
     smtp.quit()
 
